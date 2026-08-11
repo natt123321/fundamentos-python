@@ -3,3 +3,10 @@ def temperaturaemcelsius():
     return celsius
 
 def temperaturaemfahrenheit():
+    fahrenheit = celsius * 1.8 + 32
+    return fahrenheit
+
+celsius = temperaturaemcelsius()
+fahrenheit = temperaturaemfahrenheit()
+
+print(f"A temperatura em fahrenheit é {fahrenheit}")
