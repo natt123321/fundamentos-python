@@ -11,14 +11,15 @@ def numerointeiro():
         print("Seu numero é negativo")
         resultadosinal = "negativo"
 
-        if numero % 2 == 0:
-            print("Seu numero é par")
-            resultadoparidade = "par"
-        else:
-            print("Seu numero é ímpar")
-            resultadoparidade = "ímpar"
+    if numero % 2 == 0:
+        print("Seu numero é par")
+        resultadoparidade = "par"
+    else:
+        print("Seu numero é ímpar")
+        resultadoparidade = "ímpar"
 
-            print(f"Número: {numero}")
-            print(f"Classificação: {resultadoparidade} e {resultadosinal}")
+    print(f"Número: {numero}")
+    print(f"Classificação: {resultadosinal} e {resultadoparidade}")
+
 
 numerointeiro()
