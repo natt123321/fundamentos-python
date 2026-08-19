@@ -6,13 +6,13 @@ def mostrarnumero():
         print(f"O número atual é {i}")
         time.sleep(5)
 
-mostrarnumero()
+#mostrarnumero()
 
 def mostrarnumeroalternado():
     for num in range(0, 20, 2):
         print(f"O número atual é {num}")
 
-mostrarnumeroalternado()
+#mostrarnumeroalternado()
 
 def somarnumeros():
     total = 0
@@ -20,14 +20,14 @@ def somarnumeros():
         total += valor
     print(total)
 
-somarnumeros()
+#somarnumeros()
 
 def mostrarnumerospares():
     for numero in range(1, 21):
         if numero % 2 == 0:
             print(f"numeros pares {numero}")
 
-mostrarnumerospares()
+#mostrarnumerospares()
 
 def sacoladefrutas():
     frutas = ["Maçã", "Morango", "Jabuticaba", "Blueberry", "Limão", "Pêssego"]
@@ -35,7 +35,7 @@ def sacoladefrutas():
         print(f"Na minha sacola contém {frutas}")
 
 
-sacoladefrutas()
+#sacoladefrutas()
 
 def lacoaninhado():
     nomes = ["Natalia", "Carlos", "Lorena", "Mariana", "Nicolas", "Yasminn", "Yasmin"]
@@ -45,6 +45,6 @@ def lacoaninhado():
         for nota in notas:
             print(f"Nota do aluno {nota}")
 
-lacoaninhado()
+#lacoaninhado()
 
 
