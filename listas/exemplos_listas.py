@@ -35,7 +35,7 @@ def remover_nome_pelo_valor(nomes, nome):
         print("Este nome não existe na lista")
     else:
         nomes.remove(nome)
-        print(f"O nome {nome} foi remodo na lista {nomes}")
+        print(f"O nome {nome} foi removido na lista {nomes}")
 
 remover_nome_pelo_valor(lista_de_nomes, nome = "Nayara")
 
@@ -93,3 +93,37 @@ def gerenciar_notas(notas, nova_nota):
 notas_ordenadas, media = gerenciar_notas(notas_semestre, nova_nota = 3.5)
 print(f"Notas ordenadas = {notas_ordenadas}")
 print(f"A media das notas é de {media}")
+
+# Lista de listas
+def adicionar_produto(produtos, produto):
+    produto.append(produto)
+    print(f"Minha lista de produtos: {produtos[0][0]}")
+
+lista_produtos = [
+    ["Arroz", 2, 32.00],
+    ["Feijão", 3, 8.50]
+]
+novo_produto = ["Coca-cola", 2, 8.00]
+adicionar_produto(lista_produtos, novo_produto)
+
+def quantidade_total_produtos(produtos):
+    quantidade = []
+    for produto in produtos:
+        quantidade.append(produto[1])
+
+    return sum(quantidade)
+
+quantidade_produtos = quantidade_total_produtos(lista_produtos)
+print(f"A quantidade total de produtos é {quantidade_produtos}")
+
+def valor_total_produtos(produtos):
+    valores = []
+
+    for produto in produtos:
+        valor = produto[1] * produto[2]
+        valores.append(valor)
+
+        return sum(valores)
+
+preco_total_produtos = valor_total_produtos(lista_produtos)
+print(f"O valor total dos produtos é {preco_total_produtos}")
