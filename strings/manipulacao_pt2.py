@@ -6,7 +6,7 @@ def separar_nome(nome_completo):
     partes =  nome_completo.split()
     return partes
 
-nome_completo = input("Digite uma frase: ")
+nome_completo = input("Digite um nome: ")
 print(f"Nome em partes: {separar_nome(nome_completo)}")
 
 # juntar strings
@@ -51,3 +51,31 @@ def validar_nome(nome):
 nome = input("Digite um nome: ")
 validar_nome(nome)
 
+#verificar se a string contém letras e números
+def validar_usuario(usuario):
+    usuario_valido = usuario.isalnum()
+    if usuario_valido:
+        print("Usuário válido")
+    else:
+        print("Utilize apenas letras e números")
+
+nome_usuario = input("Digite seu nome: ")
+validar_usuario(nome_usuario)
+
+#analisando uma frase
+def analisar_frase(frase, palavra):
+    frase_limpa = frase.strip().lower()
+
+    qtde_caracteres = len(frase_limpa)
+    qtde_palavras = len(frase_limpa.split())
+    ocorrencia_palavra = frase_limpa.count(palavra)
+
+    print(f"Frase completa: {frase_limpa}")
+    print(f"Total de caracteres: {qtde_caracteres}")
+    print(f"Total de palavras: {qtde_palavras}")
+    print(f"Ocorrencias da palavra pesquisada: {ocorrencia_palavra}")
+
+frase_input = input("Digite uma frase: ")
+ocorrencia_palavra = input("Digite uma palavra para contar a ocorrencia: ")
+
+analisar_frase(frase_input, ocorrencia_palavra)
